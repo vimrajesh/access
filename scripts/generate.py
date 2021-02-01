@@ -36,5 +36,6 @@ if __name__ == '__main__':
         simplifier(source_filepath, pred_filepath)
     for line in yield_lines(pred_filepath):
         if(line == "Famous"):
+            print("")
             continue
         print(line)
