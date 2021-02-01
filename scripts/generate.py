@@ -35,4 +35,6 @@ if __name__ == '__main__':
     with mute():
         simplifier(source_filepath, pred_filepath)
     for line in yield_lines(pred_filepath):
+        if(line == "Famous"):
+            continue
         print(line)
